@@ -19,8 +19,11 @@ const initState = {
     {
       image: require('./Booklist/book5.jpg'),
       content: 'Test 4' 
+
+    }
   ]
 }
+
 
 
 export default class HomeScreen extends React.Component {
