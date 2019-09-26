@@ -41,10 +41,10 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>"Book Love"</Text>
-        <Text style={styles.text1}>"หนังสือที่ดี จะเปลี่ยนชีวิตคุณ"</Text>
+        <Text style={styles.text1}>"หนังสือที่ดี  จะเปลี่ยนชีวิตคุณ"</Text>
         <Image source={require('./book.jpg')} style={styles.image}></Image>
         <View style={styles.buttonClick}>
-          <Button title="Read Review"
+          <Button title="Read Book"
             onPress={() => navigate('Book', { data: this.state.books, id: 0 })} style={{ fontSize: 30, color: 'white', backgroundColor: '#669933', width: 400, justifyContent: 'center', textAlign: 'center' }} />
         </View>
       </View>
