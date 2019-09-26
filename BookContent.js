@@ -13,7 +13,6 @@ export default class BookContent extends React.Component {
         const { navigate } = this.props.navigation;
 
         const data = this.props.navigation.getParam('data')
-
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>{data.content} </Text>

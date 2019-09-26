@@ -11,6 +11,7 @@ const Book1 = createStackNavigator({
   Book: { screen: Book },
   BookContent: { screen: BookContent },
 
+  
 
 });
 

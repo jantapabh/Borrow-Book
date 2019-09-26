@@ -37,8 +37,7 @@ export default class ScoreBook extends React.Component {
                     placeholder="Comment about book this ! "
                     onChangeText={(text) => this.setState({ text })}
 
-                />
-
+             />
 
                 <View style={styles.buttonClick}>
 

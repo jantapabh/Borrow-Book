@@ -14,27 +14,24 @@ export default class Book extends React.Component {
     const { navigate } = this.props.navigation;
     const id = this.props.navigation.getParam('id');
     const propsData = this.props.navigation.getParam('data');
-    const data = propsData[id]; 
-  }
+    const data = propsData[id];
 
     //const isLast = id === propsData.length - 1
 
     return (
       <View style={styles.container}>
-        <Text style={{ fontSize: 30, color: 'white', backgroundColor: '#669933', width: 400, justifyContent: 'center', textAlign: 'center' }}> ReView Book : 1 </Text>
+        <Text style={{ fontSize: 30, color: 'white', backgroundColor: '#669933', width: 400, justifyContent: 'center', textAlign: 'center' }}>ReView Book</Text>
         <View style={styles.container}>
           <Image source={data.image} style={{ width: 300, height: 400 }} />
         </View>
         <View style={styles.buttonClick}>
-          <Button title="Read Review "
+          <Button title="Read Review"
             style={styles.buttonClick}
             // { data: data } = { data }
             onPress={() => navigate('BookContent', { data })} />
           <Button title="Next Review"
             style={styles.buttonClick}
-            onPress={() => navigate('Book', { 
-              data: propsData, 
-              id: (id + 1) % propsData.length,
+            onPress={() => navigate('Book', { data: propsData, id: (id + 1) % propsData.length,
             })}
           />
 
@@ -55,7 +52,6 @@ export default class Book extends React.Component {
           } */
           }
         </View>
-
       </View>
     );
   }
