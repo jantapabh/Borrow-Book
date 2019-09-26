@@ -31,7 +31,8 @@ export default class Book extends React.Component {
             onPress={() => navigate('BookContent', { data })} />
           <Button title="Next Review"
             style={styles.buttonClick}
-            onPress={() => navigate('Book', { data: propsData, id: (id + 1) % propsData.length,
+            onPress={() => navigate('Book', {
+              data: propsData, id: (id + 1) % propsData.length,
             })}
           />
 
